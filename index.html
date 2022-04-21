@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="Terris Ng, Portfolio, University of Toronto student, UTM student, Web Design, UX Design, Toronto, Canada">
+	<meta name="Description" content="This is Terris' portfolio website for CCT460">
+	<title>Home | Terris' Portfolio</title>
+	<!--Bootstrap CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+	<header>		
+	<!-- navbar copied from https://getbootstrap.com/docs/5.0/components/navbar/ -->
+	<nav class="navbar navbar-expand-lg navbar-dark text-123 navigation-background-color link-text-size">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html">
+				<img class="custom-logo" src="images/Logo.svg" alt="Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+				  <a class="nav-link active nav-active-left-underline-animation nav-active-padding" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item nav-inactive-left-underline-animation">
+				  <a class="nav-link" href="resume.html">Resume</a>
+				</li>
+				  <li class="nav-item nav-inactive-left-underline-animation">
+				  <a class="nav-link" href="list-of-projects.html">List of Projects</a>
+				</li>
+				<li class="nav-item dropdown nav-inactive-left-underline-animation">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+				  <ul class="dropdown-menu link-text-size" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="featured-project.html">Featured Project</a></li>
+					<li><a class="dropdown-item" href="process-page.html">Process</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+		
+<!--Jumbotron Start-->
+	<section>
+			<a href="#jump-to-featured-project"><div class="jumbotron-fluid text-light catamaran-font text-center homepage-jumbotron-background-image">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<!--Jumbotron title animation reference to https://tobiasahlin.com/moving-letters/#1-->
+							<h1 class="jumbo-margin jumbotron-title">
+								<span class="jumbotron-title-text-wrapper">
+									<span class="jumbotron-title-line jumbotron-title-line-top"></span>
+									<span class="jumbotron-title-letter">Welcome to Terris' Portfolio</span>
+									<span class="jumbotron-title-line jumbotron-title-line-bottom"></span>
+								</span>
+							</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+				</a>
+		</section>
+<!--Jumbotron End-->		
+	</header>
+	
+	<main class="pt-5 custom-font">		
+<!--Project showcase-->
+		<section>
+			<div class="container">
+				<div class="row featured-project-headers">
+					<div class="col-12">
+						<h1 id="jump-to-featured-project">Featured Project</h1>
+						<h2 class="mt-5">CCT360 - Personal Portfolio</h2>
+					</div>
+					<div class="col-12 mt-1 mb-4">
+						<!--Reference to https://www.w3schools.com/bootstrap5/bootstrap_carousel.php-->
+						<!-- Carousel -->
+						<div id="homepage-carousel" class="carousel slide" data-bs-ride="carousel">
+						  <!-- Indicators/dots -->
+						  <div class="carousel-indicators">
+							<button type="button" data-bs-target="#homepage-carousel" data-bs-slide-to="0" class="active bg-dark"></button>
+							<button type="button" data-bs-target="#homepage-carousel" data-bs-slide-to="1" class="bg-dark"></button>
+							<button type="button" data-bs-target="#homepage-carousel" data-bs-slide-to="2" class="bg-dark"></button>
+							<button type="button" data-bs-target="#homepage-carousel" data-bs-slide-to="3" class="bg-dark"></button>
+						  </div>
+
+						  <!-- The slideshow/carousel -->
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+								<a href="featured-project.html" alt="link to featured project">
+							  		<img src="images/cct460-screenshot-of-homepage.jpg" alt="CCT460 - Startup Company Mockup | Homepage" class="d-block w-100 homepage-carousel-image-properties homepage-carousel-image-links">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="featured-project.html" alt="link to featured project">
+							  		<img src="images/cct460-screenshot-of-about-us.jpg" alt="CCT460 - Startup Company Mockup | About us" class="d-block w-100 homepage-carousel-image-properties homepage-carousel-image-links">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="featured-project.html" alt="link to featured project">
+							  		<img src="images/cct460-screenshot-of-biography.jpg" alt="CCT460 - Startup Company Mockup | Biography" class="d-block w-100 homepage-carousel-image-properties homepage-carousel-image-links">
+								</a>
+							</div>
+							<div class="carousel-item">
+								<a href="featured-project.html" alt="link to featured project">
+							 		<img src="images/cct460-screenshot-of-shop.jpg" alt="CCT460 - Startup Company Mockup | Shop" class="d-block w-100 homepage-carousel-image-properties homepage-carousel-image-links">
+								</a>
+							</div>
+						  </div>
+
+						  <!-- Left and right controls/icons -->
+						  <button class="carousel-control-prev" type="button" data-bs-target="#homepage-carousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon bg-dark"></span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#homepage-carousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon bg-dark"></span>
+						  </button>
+						</div>
+					</div>
+					<div class="col-lg-8 col-12 mb-5">
+						<p>These are some of the pages of the website design I did recently, startup company website mockup built with WordPress, HTML, CSS &amp; Bootstrap, and Javascript.</p>
+						<p>Click <a class="ml-5 center-underline-animation text-success" href="featured-project.html" alt="Link to Featured Project webpage">HERE</a> if you are interested in it and see the rest of the pages!</p>
+					</div>
+				</div>
+			</div>
+		</section>		
+<!--Project showcase END-->
+
+<!--Banner 1-->
+		<!--Title Animation reference to https://tobiasahlin.com/moving-letters/#5-->
+		<section>
+			<div class="container-fluid">
+				<div class="row align-items-center text-center">
+					<div class="col-12 homepage-banner-1-background">
+						<h1 class="banner-1-title text-center align-bottom">
+							<span class="banner-1-text-wrapper"></span>
+								<span class="banner-1-line banner-1-line-1"></span>
+								<span class="banner-1-letters banner-1-letters-left">Web</span>
+								<span class="banner-1-letters banner-1-ampersand">&amp;</span>
+								<span class="banner-1-letters banner-1-letters-right">UX</span>					
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+<!--Banner 1 END-->
+		
+<!--List of projects-->
+		<section>
+			<div class="container">
+				<div class="row pl-5 pr-5 homepage-headers">
+					<div class="col-12">
+						<h1 class="mt-4 pt-4 pb-4">Some of my works</h1>
+					</div>
+					<div class="col-12 col-md-4 pt-4 ">
+						<h2 class="list-of-works-subheading text-center">CCT460 - Startup company mockup</h2>
+						<a href="featured-project.html" alt="link to featured project">
+							<img src="images/cct460-screenshot-of-homepage.jpg" class="img-fluid align-items-centers list-of-projects-hover-effects" alt="Startup company mockup">
+						</a>
+					</div>
+					<div class="col-12 col-md-4 pt-4 ">
+						<h2 class="list-of-works-subheading text-center">CCT360 - Personal Portfolio</h2>
+						<a href="list-of-projects.html" alt="link to flist of projects">
+							<img src="images/cct360-portfolio.png" class="list-of-projects-hover-effects img-fluid" alt="CCT360 - Portfolio of myself">
+						</a>
+					</div>
+					<div class="col-12 col-md-4 pt-4">
+						<h2 class="list-of-works-subheading text-center">CCT485 - Website Redesign</h2>
+						<a href="list-of-projects.html" alt="link to flist of projects">
+							<img src="images/cct485-website-redesign.jpg" class="img-fluid list-of-projects-hover-effects" alt="CCT360 - Portfolio of myself">
+						</a>
+					</div>
+					<div class="col-12">
+						<p><a class="mt-4 btn italics list-of-works-subheading btn-primary btn-lg custom-btn-animation" id="btn-view-more" href= "list-of-projects.html" role="button"><span>View more</span></a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+<!--List of projects END-->
+
+<!--Resume Banner START-->
+	<section class="mb-5 mt-5">
+		<div class="container">
+			<div class="row homepage-resume-banner">			
+				<div class="col-lg-6 col-md12 homepage-resume-banner-left">
+					<h1 class="text-white">Hello!</h1>
+					<h2 class="text-white mb-5">Like my design? Want to know more about me?</h2>
+					<a href="resume.html" alt="Link to resume page" class="center-underline-animation-white">Check out my resume</a>
+					<p class="mt-5">Hi! I am Terris, a recent graduate student from the University of Toronto studying:<a href="https://www.utm.utoronto.ca/iccit/" alt="Link to UTM CCIT Website" 	class="homepage-resume-banner-description-link "> Communication, Culture, Information and Technologies</a> &amp; <a href="https://www.utm.utoronto.ca/sociology/" alt="link to UTM Criminology " class="homepage-resume-banner-description-link">Criminology</a></p>
+					<p>The subjects that I am focusing on are mainly Web Design and UX Design</p>
+				</div>
+				<div class="col-lg-6 col-md-12 homepage-resume-banner-right">
+				</div>
+			</div>
+				<div class="col-12 mt-5">
+					<a href="#top" class="back-to-top italics text-dark left-to-right-underline-animation-black">Back to Top</a>
+				</div>
+		</div>	
+	</section>
+	</main>	
+<!--Resume Banner END-->
+	
+<!--Footer-->
+	<div class="container-fluid text-white text-center catamaran-font navigation-background-color footer-top-margin pt-5 pb-5">
+		<div class="container">
+			<div class="col-12">
+					<p class="align-items-center">Website Designed by Terris Ng</p>
+					<p>Email: terrisng@gmail.com</p>
+					<p>Phone: 647-XXX-XXXX</p>
+				</div>
+		</div> 
+	</div>
+	
+	<!--JS Libraries linked at the bottom of the page-->    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>	
+	<!--Reference to https://tobiasahlin.com/moving-letters/#1-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>	
+	<script src="js/custom.js"></script>
+</body>
+</html>

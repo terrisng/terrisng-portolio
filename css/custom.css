@@ -1,0 +1,845 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*https://fonts.google.com/specimen/Catamaran*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans&family=Roboto:ital,wght@1,900&family=Tajawal&display=swap');
+
+/*Utilities*/
+.italics{
+	font-style: italic;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.custom-font{
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Tajawal', sans-serif;
+}
+
+.custom-logo{
+	height:40px;
+	transition:0.3s;
+}
+
+.custom-logo:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+
+.footer-top-margin{
+	margin-top:200px;
+}
+/*Custom underline animation*/
+/*Reference to https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+/*Center*/
+.center-underline-animation{
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+
+.center-underline-animation:hover {
+  color: #000;
+	opacity: 0.7;
+}
+
+.center-underline-animation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.center-underline-animation:hover::before {
+  transform: scaleX(1);
+}
+
+/*Reference to https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+.center-underline-animation-white{
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.center-underline-animation-white:hover {
+  color: #FFF;
+	opacity: 0.7;
+}
+
+.center-underline-animation-white::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.center-underline-animation-white:hover::before {
+  transform: scaleX(1);
+}
+
+.center-underline-animation-black{
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+
+.center-underline-animation-black:hover {
+  color: #000;
+	opacity: 0.7;
+}
+
+.center-underline-animation-black::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.center-underline-animation-black:hover::before {
+  transform: scaleX(1);
+}
+
+/*Reference to https://tobiasahlin.com/blog/css-trick-animating-link-underlines/-*/
+/*Underline left to right*/
+.left-to-right-underline-animation-black{
+	position: relative;
+  	color: #000;
+  	text-decoration: none;
+
+}
+
+.left-to-right-underline-animation-black:hover{
+	color: #000;
+}
+
+.left-to-right-underline-animation-black::before{
+	 content: "";
+ 	 position: absolute;
+  	 display: block;
+	 width: 100%;
+	 height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: #000;
+  	transform: scaleX(0);
+	transform-origin: top left;
+  	transition: transform 0.3s ease;
+}
+
+.left-to-right-underline-animation-black:hover::before{
+	transform: scaleX(1);
+}
+
+.pt-6{
+	padding-top: 4rem !important;
+}
+
+.pb-6{
+	padding-bottom: 4rem !important;
+}
+/*Utilities END*/
+/* Navigation*/
+.link-text-size{
+	font-size: 0.8em;
+}
+
+.navigation-background-color{
+	background: rgba(76,86,94,0.99);
+}
+
+.navigation-list-of-projects-background-color{
+	background: rgba(180,54,104,1);
+}
+
+/*Navigation Left to Right underline animation*/
+/*Reference to https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+/*Active links*/
+.nav-active-left-underline-animation{
+	position: relative;
+	color: #FFF !important;
+	text-decoration: none;
+	margin: 0;
+}
+
+.nav-active-left-underline-animation:hover {
+    color: #FFF;
+ 	opacity: 0.8;
+}
+
+.nav-active-left-underline-animation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.nav-active-left-underline-animation:hover::before {
+  transform: scaleX(1);
+}
+
+/*Inactive links*/
+.nav-inactive-left-underline-animation{
+	position: relative;
+	color: #FFF;
+	text-decoration: none;
+	margin: 0;
+	opacity:0.6;
+}
+
+.nav-inactive-left-underline-animation{
+	margin: 0;
+}
+
+.nav-inactive-left-underline-animation:hover {
+    color: #FFF;
+	opacity: 1;
+}
+
+.nav-inactive-left-underline-animation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+  background-color: #FFF;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.nav-inactive-left-underline-animation:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-active-padding{
+  padding-bottom: 5px;
+}
+/*Navigation END*/
+
+/* Homepage */
+/* Main Jumbotron */
+.jumbo-margin{
+	margin: 4em 0px 5em 0px;
+}
+
+/*Animated Jumbotron Title*/
+/* Reference to https://tobiasahlin.com/moving-letters/#1*/
+.jumbotron-title{
+	font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.jumbotron-title .jumbotron-title-letter{
+	display: inline-block;
+ 	line-height: 1em;
+}
+
+.jumbotron-title .jumbotron-title-text-wrapper{
+	position: relative;
+	display: inline-block;
+  	padding-top: 0.1em;
+  	padding-right: 0.05em;
+  	padding-bottom: 0.15em;
+}
+
+.jumbotron-title .jumbotron-title-line{
+	opacity: 0;
+  	position: absolute;
+  	left: 0;
+  	height: 3px;
+  	width: 100%;
+  	background-color: #fff;
+  	transform-origin: 0 0;
+}
+
+.jumbotron-title .jumbotron-title-line-top{
+	top:0;
+}
+
+.jumbotron-title .jumbotron-title-line-bottom{
+	bottom:0;
+}
+
+/*Animated Jumbotron Title END*/
+
+.homepage-jumbotron-background-image{
+	background: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.8)),url("../images/homepage-jumbotron-background-image.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/*Jumbotron END*/
+
+/*List of works START*/
+.list-of-works-subheading{
+	font-size: 22px;
+	color: #343A40;
+}
+
+.homepage-background-color{
+	background-color: #F7F7F7;
+}
+
+.list-of-projects-hover-effects{
+	transition:0.3s;
+}
+
+.list-of-projects-hover-effects:hover{
+	transition:0.3s;
+	opacity:0.85;
+}
+
+/* View more button animation*/
+#btn-view-more{
+	background-color: #FFF;
+	border: none;
+	color: #343A40;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+#btn-view-more:hover{
+	opacity: 0.7;
+}
+
+#btn-view-more:focus{
+	box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.custom-btn-animation span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.custom-btn-animation span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.custom-btn-animation:hover span {
+  padding-right: 25px;
+}
+
+.custom-btn-animation:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* View more button animation END*/
+/*List of works END*/
+
+/*Featured Project START*/
+.featured-project-headers h1{
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+.featured-project-headers h2{
+  font-size:2em;	
+}
+
+.featured-project-headers p{
+	font-size:1.35em;
+}
+
+.homepage-carousel-image-properties{
+	object-fit:contain;
+}
+
+.homepage-carousel-image-links{
+	transition:0.3s;
+}
+
+.homepage-carousel-image-links:hover{
+	opacity:0.85;
+	transition:0.3s;
+}
+
+.homepage-headers h1{
+	font-size: 2.5em!important;
+	font-weight: 700;
+}
+/*Featured Project END*/
+
+/*Homepage banner 1 START*/
+.homepage-banner-1-background{
+	background-image: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.8)),url("../images/homepage-banner-ferris-wheel.jpeg");
+	min-height: 400px; 
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+/*Banner 1's title*/
+/*Reference to https://tobiasahlin.com/moving-letters/#5*/
+.banner-1-title {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #FFF;
+}
+
+.banner-1-title .banner-1-text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 2em;
+  padding-right: 0.05em;
+  padding-bottom: 1em;;
+  line-height: 1em;
+}
+
+.banner-1-title .banner-1-line{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #FFF;
+  transform-origin: 0.5 0;
+}
+
+.banner-1-title .banner-1-ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.banner-1-title .banner-1-letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.homepage-resume-banner h1{
+	font-size:10em;
+}
+
+.homepage-resume-banner h2{
+	font-size:2.5em;
+}
+
+.homepage-resume-banner a{
+	text-decoration: none;
+	font-size:2em;
+	color:white;
+	font-style: italic;
+}
+
+.homepage-resume-banner a:hover{
+	opacity:0.5;
+	color:white;
+}
+
+.homepage-resume-banner p{
+	color:white;
+	font-size:1.5em !important;
+}
+
+.homepage-resume-banner-left{
+	background-color:#4E5860;
+	min-height: 650px;
+}
+
+.homepage-resume-banner-right{
+	background-image:url("../images/picture of myself.jpeg");
+	min-height:850px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.homepage-resume-banner-description-link{
+	text-decoration: none;
+	font-size: 1em !important;
+	transition:0.3s;
+}
+
+.homepage-resume-banner-description-link:hover{
+	transition: 0.3s;
+}
+
+/*Homepage END*/
+
+/*Resume START*/
+.resume-page-jumbotron-background{
+	background-image: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.8)),url("../images/Fukuoka.jpg");
+	min-height: 360px; 
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.resume-title{
+	min-height:400px;
+}
+
+	/*Reference to https://tobiasahlin.com/moving-letters/#12*/
+.resume-page-custom-animated-header{
+	font-weight: 200;
+  	font-size: 1.8em;
+  	text-transform: uppercase;
+  	letter-spacing: 0.5em;
+}
+
+.resume-page-custom-animated-header .resume-page-custom-animated-header-letter{
+	display: inline-block;
+   	line-height: 1em;
+}
+
+.resume-text-styles p{
+	font-size:1.25em;
+	font-weight:500;
+	margin-bottom: 0;
+}
+
+.resume-text-styles li{
+	font-size:1.25em;
+}
+
+.resume-picture-size{
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+}
+
+.qualification-hightlight-image{
+	width:100%;
+}
+
+.back-to-top{
+	font-size:1.4em!important;
+}
+/*Resume END*/
+
+/*List of Projects Start*/
+.web-design-banner h1{
+	margin-bottom: 0;
+}
+
+.list-of-projects-page-jumbotron-background{
+	background-image: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.3)),url("../images/team-lab.jpg");
+	min-height: 360px; 
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.list-of-projects-page-banner-background{
+	background-image: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.3)),url("../images/team-lab.jpg");
+	min-height: 260px; 
+	background-attachment: fixed;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+/*Animated Title, Reference to https://tobiasahlin.com/moving-letters/#6*/
+.list-of-projects-page-title{
+	position: relative;
+  	font-weight: 900;
+  	font-size: 3.3em;
+}
+
+.list-of-projects-page-title .list-of-projects-page-title-text-wrapper{
+	position: relative;
+  	display: inline-block;
+  	padding-top: 0.2em;
+  	padding-right: 0.05em;
+  	padding-bottom: 0.1em;
+  	overflow: hidden;
+}
+
+.list-of-projects-page-title .list-of-projects-page-title-letter{
+	display: inline-block;
+  	line-height: 1em;
+}
+
+.list-of-works-image-hover{
+	transition:0.3s;
+}
+
+.list-of-works-image-hover:hover{
+	opacity: 0.6;
+	transition:0.3s;
+}
+
+.list-of-projects-page-description h1{
+	font-size:2em;
+}
+
+.list-of-projects-page-description p{
+	font-size:1.5em;
+}
+
+.list-of-projects-page-background-color{
+	background:#FBFBFB;
+}
+
+.list-of-works-description-text p, li{
+	font-size:1.25em;
+}
+/*List of Projcts End*/
+
+
+/*Featured Project Start*/
+.featured-project-jumbotron-background{
+	background: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.8)),url(" ../images/yokohama-ferris-wheel.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+	min-height:360px;
+}
+
+/*Animated title, Reference to https://tobiasahlin.com/moving-letters/#16*/
+.featured-project-page-title {
+	color: #402d2d;
+	padding: 40px 0;
+	font-weight: 800;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	overflow: hidden;
+}
+
+.featured-project-page-title .featured-project-page-title-letter {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.featured-project-page-custom-container-size{
+	max-width:1400px;
+}
+
+/*Reference to https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+/* Position the image container (needed to position the left and right arrows) */
+.featured-project-slide-show-gallery-container {
+	position: relative;
+}
+
+/* Hide the images by default */
+.featured-project-slide-show-gallery-mySlides {
+	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.featured-project-slide-show-gallery-cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.featured-project-slide-show-gallery-prev,
+.featured-project-slide-show-gallery-next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition:0.3s;
+	opacity: 0.7;
+}
+
+/* Position the "next button" to the right */
+.featured-project-slide-show-gallery-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.featured-project-slide-show-gallery-prev:hover,
+.featured-project-slide-show-gallery-next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color:#FFF;
+	opacity: 1;
+	transition:0.3s;
+}
+
+/* Number text (1/3 etc) */
+.featured-project-slide-show-gallery-numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.featured-project-slide-show-gallery-caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.featured-project-slide-show-gallery-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Six columns side by side */
+.featured-project-slide-show-gallery-column {
+	float: left;
+	width: 12.5%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.featured-project-slide-show-gallery-demo {
+	opacity: 0.6;
+}
+
+.featured-project-slide-show-gallery-active,
+.featured-project-slide-show-gallery-demo:hover {
+	opacity: 1;
+}
+
+.feature-project-slide-show-description-text p{
+	font-size: 1.25em;
+}
+
+.feature-project-slide-show-description-text li{
+	font-size: 1.25em;
+}
+
+/*Featured Project End */
+
+/*Process page START*/
+.process-page-jumbotron-background{
+	background: linear-gradient(0deg, rgba(52,58,63,0.8), rgba(52,58,63,0.8)),url(" ../images/process-page-jumbotron-background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+	min-height:360px;
+}
+
+	/*Animated Title - Reference to https://tobiasahlin.com/moving-letters/#10*/
+	.process-page-title{
+		position: relative;
+		font-weight: 600;
+		font-size: 3em;
+	}
+
+	.process-page-title .process-page-title-text-wrapper{
+		position: relative;
+		display: inline-block;
+		padding-top: 0.2em;
+		padding-right: 0.05em;
+		padding-bottom: 0.1em;
+		overflow: hidden;
+	}
+
+	.process-page-title .process-page-title-letter{
+		display: inline-block;
+		line-height: 1em;
+		transform-origin: 0 0;
+	}
+
+.navigation-chart-blue-text{
+	color: #3037D7;
+}
+.navigation-chart-orange-text{
+	color: orangered;
+}
+.navigation-chart-green-text{
+	color: darkgreen;
+}
+
+.process-description p, li{
+	font-size:1.2em;
+}
+
+.macro-micro-visualization{
+	width: 100%
+}
+
+.paragraph-inside-list p{
+	margin:0;
+	text-indent: 20px;
+}
+/*Process page END*/
+
+/*Footer start*/
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/*Footer end*/
+/*Mobile screen < 600px */
+@media screen and (max-width: 600px){
+.jumbotron-title{
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+.homepage-resume-banner h1{
+	font-size: 5em;
+}
+.homepage-resume-banner-right{
+	min-height:350px;	
+}
+	
+.list-of-projects-page-title{
+	font-size: 2em;
+}
+	
+.featured-project-page-title{
+	font-size: 1em;	
+}
+}
